@@ -11,10 +11,8 @@ while True :
 
   time.sleep(30)                     #Delay of 30 seconds (adjust as required) for water to fill in to pots
 
-  GPIO.output(TRIG, False)           #Set valve as Close
+  GPIO.output(valve, False)           #Set valve as Close
 
   time.sleep(14400)                  #Delay of 14400 seconds (adjust as required) wait time between fill in of pots with water 
-
-  GPIO.output(TRIG, False)           #Set TRIG as LOW
 
 # Further extension is to add a manual switch to operate the solenoid valve
